@@ -1,0 +1,65 @@
+article.tweet {
+  border-radius: 4px;
+  margin: 10px 0;
+  border:2px solid #696969 ;
+  border-radius: 10px;
+
+
+
+}
+article.tweet:hover{
+  background: #e1e1e1;
+    border-top: 1px solid #d0d0d0;
+}
+
+article.tweet header{
+
+ margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  position:relative;
+  display: flex;
+}
+
+.avatar{
+    height: 60px;
+  width: 60px;
+  float: left;
+  border-radius: 4px;
+  color: red;
+
+
+
+}
+/*.img{
+  background-color: #ff0000;
+    border:2px solid #ff0000;
+      border:px solid #0000FF
+ ;*/
+
+border-radius: 20px;
+
+}
+article.h2{
+  padding: 5px ;
+  width: 100%;
+}
+
+#aside{
+  position: absolute;
+  right:10px;
+  top:0;
+
+
+}
+article.tweet footer {
+  /*height: 40px;*/
+  border-top: 1px solid #ccc;
+}
+
+
+
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
