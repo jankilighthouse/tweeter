@@ -65,7 +65,8 @@ function createTweetElement(tweet) {
   const avatar = tweet.user.avatars.small;
   const user = tweet.user.name;
   const handle=tweet.user.handle;
-  const content=tweet.content.text;
+  const content=escape(tweet.content.text); // Escaping text
+  console.log(content);
   const created_at=tweet.created_at;
   // const $image = $('<img />').text(avatar).addClass('avatar');
   // const $name = $('<h2 />').text(user);
