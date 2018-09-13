@@ -8,13 +8,12 @@ article.tweet {
 
 }
 article.tweet:hover{
-  background: #e1e1e1;
+    background: #e1e1e1;
     border-top: 1px solid #d0d0d0;
 }
 
 article.tweet header{
-
- margin-top: 5px;
+  margin-top: 5px;
   margin-bottom: 20px;
   background-color: #eee;
   position:relative;
@@ -27,9 +26,6 @@ article.tweet header{
   float: left;
   border-radius: 4px;
   color: red;
-
-
-
 }
 /*.img{
   background-color: #ff0000;
@@ -56,10 +52,3 @@ article.tweet footer {
   /*height: 40px;*/
   border-top: 1px solid #ccc;
 }
-
-
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */

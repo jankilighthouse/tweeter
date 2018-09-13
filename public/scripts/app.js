@@ -1,16 +1,11 @@
-
-
-
 $(document).ready(function () {
   // prevent script injection
     const max_length = 140;
-
-  function escape(str) {
+    function escape(str) {
     const div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
-
 const data = [
   {
     "user": {
@@ -57,9 +52,6 @@ const data = [
     "created_at": 1461113796368
   }
 ];
-
-
-
 function createTweetElement(tweet) {
 
   const avatar = tweet.user.avatars.small;
@@ -73,7 +65,6 @@ function createTweetElement(tweet) {
   // const $side_info=$('<span />').text(handle);
   // const $content_c=$('<strong />').text(content);
   // const $time=$('<p />').text(created_at);
-
 let html=`
   <article class="tweet">
   <header>
@@ -119,9 +110,7 @@ function loadTweets() {
     }
   });
 }
-
 // Checks for input validity and returns correponding error message
-
 function inputValid(length) {
     if (!length) {
       return "Tweet cannot be empty";
@@ -155,12 +144,4 @@ function inputValid(length) {
   $(".new-tweet textarea").focus(() => {
     $(".errorMessage").text("");
   });
-
-
-
-
 });
-// function formtweetvalidation(form){
-//   if ($('#tweets-things[text]').length > 140) {
-//     alert('your tweet should be under 140 text')
-// }
