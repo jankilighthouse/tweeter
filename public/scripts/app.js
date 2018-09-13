@@ -1,5 +1,15 @@
 
- $(function() {
+
+
+$(document).ready(function () {
+  // prevent script injection
+    const max_length = 140;
+
+  function escape(str) {
+    const div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
 
 const data = [
   {
@@ -49,6 +59,7 @@ const data = [
 ];
 
 
+
 function createTweetElement(tweet) {
 
   const avatar = tweet.user.avatars.small;
@@ -95,21 +106,6 @@ tweets.forEach((tweet) => {
   $("#tweets").prepend(a);
 });
 }
- $('form#tweets-things').on('submit', function(e) {
-    e.preventDefault();
-    let formData = $('form#tweets-things').serialize();
-
-    console.log(formData);
-    $.ajax('/tweets',{
-      method:'POST',
-      data:formData
-    }).then(function(){
-            $('form#new-product input').val('');
-
-            loadTweets(data);
-    })
-          // return $.ajax('/tweets');
-});
 
 function loadTweets() {
   $.ajax({
@@ -122,6 +118,45 @@ function loadTweets() {
     }
   });
 }
+
+// Checks for input validity and returns correponding error message
+
+function inputValid(length) {
+    if (!length) {
+      return "Tweet cannot be empty";
+    }
+    if (length >= 140) {
+      return "Tweet cannot exceed max limit";
+    }
+  }
+
+ $('form#tweets-things').on('submit', function(e) {
+    e.preventDefault();
+    $textarea = $(this).children("textarea")[0]; //find length jquery
+    var length = $textarea.textLength;
+    let formData = $('form#tweets-things').serialize();
+    if(!inputValid(length)){
+    $.ajax('/tweets',{
+      method:'POST',
+      data:formData
+    }).then(function(){
+            $('form#new-product input').val('');
+
+            loadTweets(data);
+    })
+   } else
+   {
+    $(".errorMessage").text(inputValid(length));
+   }       // return $.ajax('/tweets');
+});
+
+  // Removes the error message when the user tries to type again in the textarea
+  $(".new-tweet textarea").focus(() => {
+    $(".errorMessage").text("");
+  });
+
+
+
 
 });
 // function formtweetvalidation(form){
