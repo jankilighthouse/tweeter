@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  loadTweets();
   // prevent script injection
     const max_length = 140;
     function escape(str) {
