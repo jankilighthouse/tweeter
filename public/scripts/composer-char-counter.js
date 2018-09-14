@@ -1,14 +1,15 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-  const max_length = 140;
+  //counter
+  $('textarea').on('keyup keypress', function () {
+    let textLength = $(this).val().length;
+    $(this).parent('form').children('.counter').text(140 - textLength);
 
-  $(".new-tweet textarea").on('keyup', function() {
-    const length = this.value.length;
-    // console.log(length);
-    const $counter = $(this).parent().children(".counter");
-
-    $counter.text(max_length - length);
-
-
+    if (textLength > 140)
+      $(this).parent('form').children('.counter').css('color', 'red');
+    else
+      $(this).parent('form').children('.counter').css('color', 'black');
   });
+
+
 });

@@ -16,11 +16,9 @@ body {
 }
 .container{
   width: 550px;
-  height: 750px;
-  background: #ffffff;
-  margin:140px auto 0 auto;
-  padding: 40px 2em 2em;
-  position: relative;;
+  background-color: #ffffff;
+  margin: 80px auto 0 auto;
+  padding: 40px 2em 0 2em;
 
 }
 
