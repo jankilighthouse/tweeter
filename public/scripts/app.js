@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   loadTweets();
   // prevent script injection
@@ -11,10 +12,14 @@ function createTweetElement(tweet) {
 
   const avatar = tweet.user.avatars.small;
   const user = tweet.user.name;
+      const id = tweet._id;
+
   const handle=tweet.user.handle;
   const content=escape(tweet.content.text); // Escaping text
   console.log(content);
   const created_at=tweet.created_at;
+
+    const likes = tweet.likes;
 
 
 
@@ -36,6 +41,11 @@ let html=`
     <p>
       ${created_at}
       </p>
+      <div class='social'>
+              <span><i class='fa fa-flag' aria-hidden='true'></i></span>
+              <span><i class='fa fa-retweet' aria-hidden='true'></i></span>
+              <i class='fa fa-heart like-btn unlike' aria-hidden='true'></i><span class='likey'></span>
+            </div>
   </footer>
    </article>
 `;
@@ -97,3 +107,9 @@ function inputValid(length) {
     $(".errorMessage").text("");
   });
 });
+
+
+
+
+
+

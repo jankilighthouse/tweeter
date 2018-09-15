@@ -34,6 +34,24 @@ article.h2{
   right:10px;
   top:0;
 }
+.likes {
+        color: #ff0000; }
+
 article.tweet footer {
   border-top: 1px solid #ccc;
+  height: 40px;
 }
+
+    article.tweet:hover footer .social {
+      display: inline; }
+
+      article.tweet footer .social {
+      display: none;
+      color: #00a087;
+      float: right;
+      padding: 10px; }
+
+
+      article.tweet footer .social span {
+        padding: 5px; }
+

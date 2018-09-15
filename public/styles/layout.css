@@ -15,10 +15,15 @@ body {
 
 }
 .container{
-  width: 550px;
+  width: 450px;
   background-color: #ffffff;
   margin: 80px auto 0 auto;
   padding: 40px 2em 0 2em;
 
 }
+
+@media (max-width: 500px) {
+  .container {
+    width: 380px;
+    padding-top: 50px; } }
 

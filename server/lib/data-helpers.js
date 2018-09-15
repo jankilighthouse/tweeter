@@ -1,6 +1,5 @@
 "use strict";
 var moment = require('moment');
-
 moment().format();
 
 // Simulates the kind of delay we see with network or filesystem operations
