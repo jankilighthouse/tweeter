@@ -12,17 +12,11 @@ function createTweetElement(tweet) {
 
   const avatar = tweet.user.avatars.small;
   const user = tweet.user.name;
-      const id = tweet._id;
-
   const handle=tweet.user.handle;
   const content=escape(tweet.content.text); // Escaping text
   console.log(content);
   const created_at=tweet.created_at;
-
-    const likes = tweet.likes;
-
-
-
+  const likes = tweet.likes;
 
 let html=`
   <article class="tweet">
@@ -49,7 +43,6 @@ let html=`
   </footer>
    </article>
 `;
-
   return html;
 };
 
@@ -93,13 +86,12 @@ function inputValid(length) {
       data:formData
     }).then(function(){
             $('form#new-product input').val('');
-
             loadTweets();
     })
       } else {
 
-              $(".errorMessage").text(inputValid(length));
-            }       // return $.ajax('/tweets');
+              $(".errorMessage").text(inputValid(length));  // return $.ajax('/tweets');
+            }
   });
 
   // Removes the error message when the user tries to type again in the textarea
