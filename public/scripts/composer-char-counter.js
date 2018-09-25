@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   //counter
   $('textarea').on('keyup keypress', function () {
     let textLength = $(this).val().length;

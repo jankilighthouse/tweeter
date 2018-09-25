@@ -9,44 +9,40 @@
   z-index: 10;
 }
   /* Bird : Logo of the website */
- #nav-bar .logo {
-    float: left;
-    width: 80px;
-    height: 80px;
-  }
-
+#nav-bar .logo {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
   /* Website name : Header */
 #nav-bar .header {
-    float: left;
-    padding-left: 10px;
-    font-size: 2em;
-    line-height: 80px
-  }
-
+  float: left;
+  padding-left: 10px;
+  font-size: 2em;
+  line-height: 80px
+}
   /* Compose Button */
 #nav-bar .compose {
-    float: right;
-    height: 60px;
-    width: 120px;
-    background-color: #E7FDFF;
-    border-radius: 4px;
-    margin: 10px;
-    color: #000;
-    font-size: 1.2em;
-    text-align: center;
-    line-height: 60px;
-    border: 1px solid #000;
-  }
-
+  float: right;
+  height: 60px;
+  width: 120px;
+  background-color: #E7FDFF;
+  border-radius: 4px;
+  margin: 10px;
+  color: #000;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid #000;
+}
   /* Compose button changes color when hovered */
 #nav-bar .compose:hover {
-    background-color: white;
-    color:#00a087;
-  }
-
+  background-color: white;
+  color:#00a087;
+}
   /* Compose button disables the outline */
 #nav-bar .compose:focus {
     border: none
-  }
+}
 
 

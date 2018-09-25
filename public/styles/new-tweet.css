@@ -1,10 +1,10 @@
 .new-tweet{
-background-color: #eee ;
-padding:10px;
-margin: 0em 0em;
-border:2px solid #696969 ;
-border-radius: 10px;
-top: 140px;
+  background-color: #eee ;
+  padding:10px;
+  margin: 0em 0em;
+  border:2px solid #696969 ;
+  border-radius: 10px;
+  top: 140px;
 
 }
 .new-tweet h2 {
@@ -22,9 +22,6 @@ top: 140px;
   color: red;
   margin-left: 10px;
 }
-
 .counter{
   float: right;
-/*  color: #FF0000;
-*/
 }

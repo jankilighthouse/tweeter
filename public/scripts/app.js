@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   loadTweets();
   // prevent script injection
@@ -9,7 +8,6 @@ $(document).ready(function () {
     return div.innerHTML;
   }
 function createTweetElement(tweet) {
-
   const avatar = tweet.user.avatars.small;
   const user = tweet.user.name;
   const handle=tweet.user.handle;
@@ -20,32 +18,28 @@ function createTweetElement(tweet) {
 
 let html=`
   <article class="tweet">
-  <header>
-  <div class="img">
-    <img class="avatar" src=${avatar}>
-  </div>
-  <h2>${user}</h2>
-
-  <span id="aside">${handle}</span>
-  </header>
-
-  <strong>${content}</strong>
-
-  <footer>
+   <header>
+   <div class="img">
+     <img class="avatar" src=${avatar}>
+   </div>
+   <h2>${user}</h2>
+   <span id="aside">${handle}</span>
+   </header>
+   <strong>${content}</strong>
+   <footer>
     <p>
       ${created_at}
-      </p>
+    </p>
       <div class='social'>
-              <span><i class='fa fa-flag' aria-hidden='true'></i></span>
-              <span><i class='fa fa-retweet' aria-hidden='true'></i></span>
-              <i class='fa fa-heart like-btn unlike' aria-hidden='true'></i><span class='likey'></span>
-            </div>
-  </footer>
-   </article>
+         <span><i class='fa fa-flag' aria-hidden='true'></i></span>
+         <span><i class='fa fa-retweet' aria-hidden='true'></i></span>
+         <i class='fa fa-heart like-btn unlike' aria-hidden='true'></i><span class='likey'></span>
+      </div>
+   </footer>
+  </article>
 `;
   return html;
 };
-
 function renderTweets(tweets) {
   $("#tweets").empty();
   tweets.forEach((tweet) => {
@@ -74,7 +68,6 @@ function inputValid(length) {
       return "Tweet cannot exceed max limit";
     }
 }
-
  $('form#tweets-things').on('submit', function(e) {
     e.preventDefault();
     $textarea = $(this).children("textarea")[0]; //find length jquery
@@ -88,12 +81,11 @@ function inputValid(length) {
             $('form#new-product input').val('');
             loadTweets();
     })
-      } else {
+     } else {
 
               $(".errorMessage").text(inputValid(length));  // return $.ajax('/tweets');
             }
   });
-
   // Removes the error message when the user tries to type again in the textarea
   $(".new-tweet textarea").focus(() => {
     $(".errorMessage").text("");
