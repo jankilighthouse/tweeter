@@ -25,7 +25,9 @@ let html=`
    <h2>${user}</h2>
    <span id="aside">${handle}</span>
    </header>
+   <div class="content">
    <strong>${content}</strong>
+   </div>
    <footer>
     <p>
       ${created_at}
