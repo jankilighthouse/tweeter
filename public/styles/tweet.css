@@ -16,7 +16,6 @@ article.tweet header{
   position:relative;
   display: flex;
   opacity: 0.7
-
 }
 .content{
   margin-bottom: 20px;
@@ -49,7 +48,6 @@ article.tweet footer {
   border-top: 1px solid #ccc;
   height: 40px;
   display: flex;
-
 }
 article.tweet:hover footer .social {
   display: inline;
