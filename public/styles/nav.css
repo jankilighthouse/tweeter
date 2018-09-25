@@ -1,72 +1,52 @@
-#nav-bar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #00a087;
-    color: #e8fdff;
-    padding: 0em 2em;
-    z-index: 500;
-
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: #00a087;
+  color: #e8fdff;
+  padding: 0em 2em;
+  z-index: 10;
 }
-#nav-bar .logo {
-
-    height: 80px;
-    width: 80px;
+  /* Bird : Logo of the website */
+ #nav-bar .logo {
     float: left;
-}
-
-#nav-bar .header {
-  line-height:70px;
-  font-size: 25px;
-  float: left;
-  margin-left: 10px;
-  vertical-align: middle;
-}
-  #nav-bar button {
-  float: right;
-  width: 140px;
-  height: 60px;
-  font-size: 1.5em;
-  color: #00a087;
-  border: solid black 1.7px;
-  border-radius: 4px;
-  background-color: #caf3e5;
-  margin-top: 10px;
-}
-#nav-bar button:hover {
-  color: black;
-  background-color: white;
-  cursor: pointer;
-}
-
-}
-#nav-bar:after{
-  clear: :both;
-}
-
-/*
-@media (max-width: 500px) {
-  #nav-bar {
-    height: 75px;
-    padding: 0.5em  0.5em; }
-
-  #logo_header .logo {
-    height: 50px; }
-
-/*
-  #compose img {
-    width: 12px;
-    margin-left: -3px;
-    margin-right: -3px; }
+    width: 80px;
+    height: 80px;
   }
 
-*/
+  /* Website name : Header */
+#nav-bar .header {
+    float: left;
+    padding-left: 10px;
+    font-size: 2em;
+    line-height: 80px
+  }
 
+  /* Compose Button */
+#nav-bar .compose {
+    float: right;
+    height: 60px;
+    width: 120px;
+    background-color: #E7FDFF;
+    border-radius: 4px;
+    margin: 10px;
+    color: #000;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #000;
+  }
 
+  /* Compose button changes color when hovered */
+#nav-bar .compose:hover {
+    background-color: white;
+    color:#00a087;
+  }
 
-
-*/
-
+  /* Compose button disables the outline */
+#nav-bar .compose:focus {
+    border: none
+  }
 
 

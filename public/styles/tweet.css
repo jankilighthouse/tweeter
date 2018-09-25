@@ -40,16 +40,21 @@ article.h2{
 article.tweet footer {
   border-top: 1px solid #ccc;
   height: 40px;
+  display: flex;
+
 }
 
     article.tweet:hover footer .social {
-      display: inline; }
+      display: inline;
+       }
 
       article.tweet footer .social {
       display: none;
       color: #00a087;
       float: right;
-      padding: 10px; }
+      padding: 10px;
+      margin-left: auto;
+       }
 
 
       article.tweet footer .social span {
