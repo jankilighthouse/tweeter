@@ -12,7 +12,6 @@ function createTweetElement(tweet) {
   const user = tweet.user.name;
   const handle=tweet.user.handle;
   const content=escape(tweet.content.text); // Escaping text
-  console.log(content);
   const created_at=tweet.created_at;
   const likes = tweet.likes;
 
