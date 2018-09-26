@@ -79,7 +79,7 @@ function inputValid(length) {
       method:'POST',
       data:formData
     }).then(function(){
-            $('form#new-product input').val('');
+            $('form#tweets-things textarea').val('');
             loadTweets();
     })
      } else {
