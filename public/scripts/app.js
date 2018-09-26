@@ -29,9 +29,9 @@ let html=`
    <strong>${content}</strong>
    </div>
    <footer>
-    <p>
+    <div class="created_at">
       ${created_at}
-    </p>
+    </div>
       <div class='social'>
          <span><i class='fa fa-flag' aria-hidden='true'></i></span>
          <span><i class='fa fa-retweet' aria-hidden='true'></i></span>

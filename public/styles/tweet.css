@@ -1,24 +1,32 @@
 article.tweet {
-  border-radius: 4px;
+  border-radius: 5px;
   margin: 10px 0;
-  border:1px solid #696969 ;
-  padding: 5px;
-}
+  border-color: #bdbdbd;
+  border-style: solid;
+  border-width: 1px;
+
+/*  padding: 5px;
+*/}
 article.tweet:hover{
   background: #e1e1e1;
   border-top: 1px solid #d0d0d0;
 }
 
 article.tweet header{
-  margin-top: 5px;
-  margin-bottom: 20px;
+/*  margin-top: 5px;
+*/  margin-bottom: 20px;
   background-color: #eee;
   position:relative;
   display: flex;
-  opacity: 0.7
+  opacity: 0.7;
+  height: 70px;
+
+
 }
 .content{
   margin-bottom: 20px;
+  padding:10px;
+
 }
 
 .avatar{
@@ -26,7 +34,6 @@ article.tweet header{
   width: 60px;
   float: left;
   border-radius: 4px;
-  color: red;
 }
 border-radius: 20px;
 }
@@ -43,7 +50,9 @@ article.h2{
 .likes {
   color: #ff0000;
 }
-
+.created_at{
+  padding: 10px;
+}
 article.tweet footer {
   border-top: 1px solid #ccc;
   height: 40px;

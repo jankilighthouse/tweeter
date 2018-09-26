@@ -1,9 +1,10 @@
 .new-tweet{
   background-color: #eee ;
+  display:none;
   padding:10px;
   margin: 0em 0em;
-  border:2px solid #696969 ;
-  border-radius: 10px;
+  border:1px solid #ccc ;
+  border-radius: 4px;
   top: 140px;
 }
 .new-tweet h2 {
@@ -13,7 +14,7 @@
 }
 
 .new-tweet textarea {
-  padding: 10px ;
+  padding: 5px ;
   width: 100%;
 }
 
