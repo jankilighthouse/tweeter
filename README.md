@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone created in week 3 of the Lighthouse Labs Web Development Bootcamp. Users are able to view previously posted tweets and submit their own all from a one page interface.
 
-## Screenshots
+## Final Product
 Tweeters homepage, displaying all previously posted tweets.
 !["Screenshot of Tweeter-app"](https://github.com/jankilighthouse/tweeter/blob/master/docs/homepage.png?raw=true)
 
