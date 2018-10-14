@@ -4,14 +4,13 @@ Tweeter is a simple, single-page Twitter clone created in week 3 of the Lighthou
 
 ## Screenshots
 Tweeters homepage, displaying all previously posted tweets.
-!["Screenshot of Tweeter-app"]
+!["Screenshot of Tweeter-app"](https://github.com/jankilighthouse/tweeter/blob/master/docs/homepage.png?raw=true)
 
 Compose new tweets by clicking the compose button in the top right corner - new tweets will be instantly posted to the feed.
-!["Screenshot of Tweeter-app"]
+!["Screenshot of Tweeter-app"](https://github.com/jankilighthouse/tweeter/blob/master/docs/new-tweets.png?raw=true)
 
 See it in action!
-!["Screenshot of Tweeter-app"]
-
+!["Screenshot of Tweeter-app"](https://github.com/jankilighthouse/tweeter/blob/master/docs/tweet-action.png?raw=true)
 
 ## Dependencies
 
