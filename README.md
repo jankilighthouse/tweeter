@@ -18,7 +18,10 @@ See it in action!
 2.Install dependencies using the npm install command.
 3.Start the web server using the npm run local command. The app will be served at http://localhost:8080/.
 4.Go to http://localhost:8080/ in your browser.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5506ce04f08c646e7f46fd856c80340f880e2df2
 
 ## Dependencies
 
