@@ -12,6 +12,13 @@ Compose new tweets by clicking the compose button in the top right corner - new 
 See it in action!
 !["Screenshot of Tweeter-app"](https://github.com/jankilighthouse/tweeter/blob/master/docs/tweet-action.png?raw=true)
 
+## Getting Started
+
+Fork this repository, then clone your fork of this repository.
+Install dependencies using the npm install command.
+Start the web server using the npm run local command. The app will be served at http://localhost:8080/.
+Go to http://localhost:8080/ in your browser.
+
 ## Dependencies
 
 - Express
