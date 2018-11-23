@@ -38,6 +38,14 @@ module.exports = function(DataHelpers) {
       }
     });
   });
+  tweetsRoutes.post('/updateLikes', function(req, res) {
+    const data = req.body;
+    DataHelpers.updateLikes(data, (callback) => {
+      res.status(201).json(callback);
+    });
+
+  });
+
 
   return tweetsRoutes;
 

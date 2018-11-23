@@ -7,6 +7,25 @@ $(document).ready(function () {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
+  function likeTweet(event) {
+    const targetTweet = event.target;
+    const tweetID = $(targetTweet).data('id');
+    let data = {id: tweetID};
+
+    if($(targetTweet).hasClass('likes')) {
+      $(targetTweet).removeClass('likes');
+      data.likeStatus = 'remove';
+    } else {
+      $(targetTweet).addClass('likes');
+      data.likeStatus='add';
+    }
+// Make the post request to update the like count
+  $.ajax('/tweets/updateLikes', {method: 'POST', data: data})
+  .then(function(likeCount) {
+    $(`#${tweetID}-likes`).text(likeCount);
+  });
+
+  }
 function createTweetElement(tweet) {
   const avatar = tweet.user.avatars.small;
   const user = tweet.user.name;
@@ -34,7 +53,7 @@ let html=`
       <div class='social'>
          <span><i class='fa fa-flag' aria-hidden='true'></i></span>
          <span><i class='fa fa-retweet' aria-hidden='true'></i></span>
-         <i class='fa fa-heart like-btn unlike' aria-hidden='true'></i><span class='likey'></span>
+         <span><i data-id="${tweet._id}" class='fa fa-heart icons' aria-hidden='true'></i><span id="${tweet._id}-likes">${tweet.likes}</span></span>
       </div>
    </footer>
   </article>
@@ -46,6 +65,10 @@ function renderTweets(tweets) {
   tweets.forEach((tweet) => {
   var a=createTweetElement(tweet);
   $("#tweets").prepend(a);
+  });
+  $('.fa-heart').click(function(event) {
+    // $(this.animate({fontSize: '15px'},100).animate({fontSize: '14px'},100));
+    likeTweet(event);
   });
 }
 
